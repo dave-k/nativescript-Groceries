@@ -37,7 +37,6 @@ export class ListComponent implements OnInit {
     this.groceryListService.delete(grocery.id)
       .subscribe(
         () => {
-          console.dump(grocery);
           let index = this.groceryList.indexOf(grocery);
           this.groceryList.splice(index, 1);
         }
